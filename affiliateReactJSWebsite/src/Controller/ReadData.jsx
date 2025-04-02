@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Papa from "papaparse";
 
 const readFile = (path, setData) => {
@@ -15,10 +15,7 @@ const readFile = (path, setData) => {
 
   fetchData();
 };
-///read by categoty
-const fillterCategory = (data, category) => {
-  return data.filter((item) => item.type === category);
-};
+
 export default function CsvReader({ typeProduct, filePath, data, setData }) {
   useEffect(() => {
     readFile(filePath, setData); // Gọi hàm đọc file CSV khi component mount

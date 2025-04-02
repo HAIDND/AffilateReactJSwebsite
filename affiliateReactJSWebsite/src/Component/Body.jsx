@@ -1,9 +1,7 @@
-import { Box, Button, colors, Grid, Paper, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import ItemLink from "./ItemLink";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-//ẽdternal
-import { readFile } from "../Data/CRUDdata";
 import CsvReader from "../Controller/ReadData";
 function Body({ typeProduct }) {
   const [data, setData] = useState([]);

@@ -1,4 +1,4 @@
-import { Button, Card, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 
 function ItemLink({ product }) {
   function handleClickProduct(link) {

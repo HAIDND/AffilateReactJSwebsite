@@ -1,5 +1,4 @@
-import { Card, Grid, Icon, Link, Typography } from "@mui/material";
-import CsvReader from "../Controller/ReadData";
+import { Card, Grid, Typography } from "@mui/material";
 import ScrollButton from "./ScrollButton";
 
 function Header({ setTypeProduct }) {
